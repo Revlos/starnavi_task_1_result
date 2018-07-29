@@ -1,0 +1,58 @@
+.filter {
+  padding: 2rem;
+}
+
+.filter ul {
+  padding: 0;
+  list-style: none;
+}
+
+.filter__main_h {
+  margin-top: -1rem;
+  margin-left: -1rem;
+
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  color: rgb(182, 182, 182);
+}
+
+.filter h2 {
+  background-color: lightgray;
+
+  color: rgb(49, 49, 49);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.filter__author__authors {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.filter__size__sizes li {
+  margin-top: 0.5rem;
+}
+
+.filter__author__authors li {
+  margin-top: 0.5rem;
+}
+
+.filter a {
+
+  display: list-item;
+
+  margin-left: 1.5em;
+
+  color: rgb(49, 49, 49);
+  list-style: none;
+}
+
+.filter a:hover {
+  list-style: disc;
+}
+
+.filter a.filter__item--selected {
+  list-style: disc;
+}

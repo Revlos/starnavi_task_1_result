@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!--Connection of the modules:-->
+  <script src="modules/conn-space/conn-space.js"></script>
+  <script src="modules/imgs-set/imgs-set.js"></script>
+  <script src="modules/ls-favorites/ls-favorites.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="modules/head/head.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="modules/filter/filter.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="modules/img-panel/img-panel.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="modules/one-img-show/one-img-show.css"/>
+</head>
+<body>
+  <!--Head:-->
+  <div class="head_md">
+    <div class="head_md__head clearfix">
+      <span class="head_md__head__on">All images</span>
+      <span class="head_md__head__go">
+        <a href="javascript:;"></a>
+      </span>
+    </div>
+    <div class="head_md__imgs_cont clearfix" data-head-md-on>
+      <div class="main">
+        <!--Images panel-->
+        <div class="img_panel">
+          <div class="img_panel__imgs">
+            <div class="img_panel__imgs__img_cont" data-img-star-on="true">
+              <a href="javascript:;" class="img_panel__imgs__img_a" data-img-indx="0">
+                <img src="https://picsum.photos/200?image=0" alt="">
+              </a>
+              <a class="img_panel__imgs__star" href="javascript:;"
+              data-img-indx="0" data-img-star-on="true">Star</a>
+            </div>
+            <div class="img_panel__imgs__img_cont">
+                <a href="javascript:;" class="img_panel__imgs__img_a" data-img-indx="0">
+                  <img src="https://picsum.photos/200?image=0" alt="">
+                </a>
+                <a class="img_panel__imgs__star" href="javascript:;"
+                data-img-indx="0" data-img-star-on="false">Star</a>
+              </div>
+          </div>
+          <div class="img_panel__nav__container">
+            <div class="img_panel__nav">
+              <a href="javascript:;" class="img_panel__nav__beg">&#x226A;</a>
+              <a href="javascript:;" class="img_panel__nav__prev">&#60;</a>
+              <ul class="img_panel__nav__num">
+                <li><a href="javascript:;" class="img_panel__nav__num__item">1</a></li>
+                <li><a href="javascript:;" class="img_panel__nav__num__item">2</a></li>
+                <li><a href="javascript:;" class="img_panel__nav__num__item">3</a></li>
+              </ul>
+              <a href="javascript:;" class="img_panel__nav__next">&#x3e;</a>
+              <a href="javascript:;" class="img_panel__nav__end">&#x226B;</a>
+              <!--
+              <label>Go to: <input type="text" class="img_panel__nav__goto"></label>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aside">
+        <!--Filter:-->
+        <div class="filter">
+          <h1 class="filter__main_h">
+            Filter by
+          </h1>
+      
+          <div class="filter__gener">
+            <span class="filter__gener__none"><a href="javascript:;">None</a></span> 
+          </div>
+      
+          <div class="filter__size">
+            <h2 class="filter__h">Size</h2>
+            <ul class="filter__size__sizes">
+            </ul>
+          </div>
+      
+          <div class="filter__author">
+            <h2 class="filter__h">Author</h2>
+            <ul class="filter__author__authors">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--One image show-->
+  <div class="one_img_show" data-show="false">
+    <img class="one_img_show__img" src="https://picsum.photos/10/10?image=0" 
+      data-zoom="out" alt="">
+  </div>
+  
+  
+
+  <script src="modules/head/head.js"></script>
+  <script src="modules/filter/filter.js"></script>
+  <script src="modules/img-panel/img-panel.js"></script>
+  <script src="modules/one-img-show/one-img-show.js"></script>
+</body>
+</html>
